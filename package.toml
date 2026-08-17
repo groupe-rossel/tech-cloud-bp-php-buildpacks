@@ -1,0 +1,14 @@
+
+[[dependencies]]
+  uri = "docker://ghcr.io/heroku/php:1.6.7"
+
+[[dependencies]]
+  uri = "docker://ghcr.io/heroku/procfile:4.2.3"
+
+[[targets]]
+  arch = "amd64"
+  os = "linux"
+
+[[targets]]
+  arch = "arm64"
+  os = "linux"

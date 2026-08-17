@@ -1,0 +1,22 @@
+api = "0.8"
+
+[buildpack]
+  description = "A Cloud Native Buildpack with an order definition suitable for Php applications"
+  id = "be.rossel.tech.php"
+  keywords = ["Php"]
+  name = "PHP Buildpack"
+  version = "{{ .version }}"
+
+[metadata]
+  include-files = ["LICENSE", "README.md", "buildpack.toml"]
+
+[[order]]
+
+
+  [[order.group]]
+    id = "heroku/php"
+    version = "1.6.7"
+
+  [[order.group]]
+    id = "heroku/procfile"
+    version = "4.2.3"
